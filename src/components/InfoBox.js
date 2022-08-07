@@ -6,20 +6,29 @@ import { faCheck, faXmark } from '@fortawesome/free-solid-svg-icons'
 export default function InfoBox(props) {
     const [showHint, setShowHint] = useState(false)
 
+    const hint = rightAnswers();
+
     const hintElement = showHint ? <div className='infoBox--hint--show'>
-        Correct: {rightAnswers()}
+        <div>Correct: {hint.correct}</div>
+        <div>Wrong: {hint.wrong}</div>
     </div> : "";
 
     function rightAnswers() {
         var currentlyCorrect = 0;
+        var currentlyWrong = 0;
         var answer = getTypes(props.solution);
         var currentlyQuessed = getTypes(props.currentQuess);
         for (const type of currentlyQuessed) {
             if(answer.includes(type)) {
                 currentlyCorrect++;
+            } else {
+                currentlyWrong++;
             }
         }
-        return `${currentlyCorrect} / ${answer.length}`;
+        return {
+            correct: `${currentlyCorrect} / ${answer.length}`,
+            wrong: currentlyWrong
+        };
     }
 
     function getTypes(typeList) {

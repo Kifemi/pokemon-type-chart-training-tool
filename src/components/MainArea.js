@@ -1,12 +1,12 @@
 import { useState, useEffect } from 'react'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowsRotate, faArrowRightArrowLeft } from '@fortawesome/free-solid-svg-icons'
+import { faArrowRightArrowLeft } from '@fortawesome/free-solid-svg-icons'
 
 import SelectedTypeArea from './SelectedTypeArea';
 import TypeSelectionArea from './TypeSelectionArea';
 import InfoBox from './InfoBox';
-import fetchAllTypes, {bug, electric, typeBackgroundColors} from '../DataManagement';
+import fetchAllTypes, {typeBackgroundColors} from '../DataManagement';
 
 export default function MainArea() {
     // ---------- STATES ----------
@@ -42,7 +42,6 @@ export default function MainArea() {
 
     useEffect(() => {
         checkIsSolutionCorrect();
-        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [currentQuess])
 
 

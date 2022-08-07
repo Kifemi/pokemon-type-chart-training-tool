@@ -1,5 +1,3 @@
-// import { useState, useEffect } from 'react'
-
 import Type from './Type'
 
 export default function TypeSelectionArea(props) {
