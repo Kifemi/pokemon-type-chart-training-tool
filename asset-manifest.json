@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/pokemon-type-chart-training-tool/static/css/main.79748648.css",
-    "main.js": "/pokemon-type-chart-training-tool/static/js/main.2ff77bca.js",
+    "main.js": "/pokemon-type-chart-training-tool/static/js/main.f0395f07.js",
     "index.html": "/pokemon-type-chart-training-tool/index.html",
     "main.79748648.css.map": "/pokemon-type-chart-training-tool/static/css/main.79748648.css.map",
-    "main.2ff77bca.js.map": "/pokemon-type-chart-training-tool/static/js/main.2ff77bca.js.map"
+    "main.f0395f07.js.map": "/pokemon-type-chart-training-tool/static/js/main.f0395f07.js.map"
   },
   "entrypoints": [
     "static/css/main.79748648.css",
-    "static/js/main.2ff77bca.js"
+    "static/js/main.f0395f07.js"
   ]
 }
